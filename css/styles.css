@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(51, 51, 51);
+
+  background-color: #f3f3f3;
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+#app {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main related"
+    "footer footer";
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  height: 7.2rem;
+  border: 1px solid #333;
+
+  display: flex;
+  align-items: center;
+  padding: 0 2.4rem;
+
+  background-color: #065e7c;
+}
+
+header input {
+  margin: 0 2.6rem;
+  padding: 1.2rem 2rem;
+
+  width: 100%;
+
+  border: none;
+  border-radius: 0.4rem;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+
+  outline: none;
+}
+
+.main {
+  grid-area: main;
+}
+
+.main > img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h1,
+.like-dislike,
+.text-content,
+.related {
+  padding: 1rem 2.4rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.related {
+  grid-area: related;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-items: stretch;
+  margin: 1rem 0;
+}
+
+.article-image {
+  grid: 1;
+}
+
+.article-content {
+  grid: 2;
+}
+
+.article > img {
+  width: 15.1rem;
+  border-radius: 0.8rem;
+}
+
+footer {
+  grid-area: footer;
+
+  height: 6.4rem;
+
+  background-color: #387e96;
+
+  padding: 1rem;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #app {
+    grid-template-areas:
+      "header"
+      "main"
+      "related"
+      "footer";
+  }
+}
