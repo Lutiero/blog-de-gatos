@@ -1,24 +1,18 @@
-# Operadores Matemáticos
+# Blog de gatos
 
-Desafio do curso explorer da rocketseat de Javascript.
+Desafio do curso explorer da rocketseat.
 
-Nesse desafio, você irá solicitar ao usuário que ele insira **dois números** e, a partir daí, calcular:
-
-- [ ] A soma dos dois números;
-- [ ] A subtração dos dois números;
-- [ ] A multiplicação dos dois números;
-- [ ] A divisão dos dois números;
-- [ ] O resto da divisão dos dois números;
-
-Fácil até aqui, né? Bora se desafiar? 👀 🧑‍🚀
-
-- [ ] Verifique se a soma dos dois números é par ~~(ou ímpar)~~;
-- [ ] Verifique se os dois números inseridos são iguais ~~(ou diferentes)~~.
+- Mobile First: inicie o projeto deixando-o responsivo em telas menores para depois ajustar para uma versão desktop;
+- Unidade de medida flexível;
+- Grid;
+- Variáveis no CSS;
+- Cores HSL;
+- Animações e transições simples.
 
 ## Para rodar
 
 ```shell
-  git clone https://github.com/Lutiero/operadores-matematicos
+  git clone https://github.com/Lutiero/blog-de-gatos
   npm i
   npm run dev
 ```
